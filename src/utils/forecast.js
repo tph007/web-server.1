@@ -14,7 +14,8 @@ const forecast = (latitude, longitude, callback) => {
             ' It is currently ' + body.currently.temperature + 
             'º. The high today is: ' + body.daily.data[0].temperatureHigh + 
             'º with a low of ' +  body.daily.data[0].temperatureLow +  
-            'º. There is a ' + (body.currently.precipProbability * 100) + '% chance of rain.'
+            'º. There is a ' + (body.currently.precipProbability * 100) + 
+            '% chance of rain.'
                     
             callback(undefined, weatherData)
         }
