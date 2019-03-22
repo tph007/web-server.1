@@ -11,7 +11,7 @@ const forecast = (latitude, longitude, callback) => {
         } else {
             var timenow = moment(body.currently.time*1000).format("MMM Do, YYYY - HH:mm:ss ZZ");
             weatherData = 'On ' + timenow + ', ' + body.daily.data[0].summary + 
-            ' It is currently ' + body.currently.temperature + 
+            '. It is currently ' + body.currently.temperature + 
             'º. The high today is: ' + body.daily.data[0].temperatureHigh + 
             'º with a low of ' +  body.daily.data[0].temperatureLow +  
             'º. There is a ' + (body.currently.precipProbability * 100) + 
